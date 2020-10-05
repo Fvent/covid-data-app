@@ -1,0 +1,20 @@
+<!-- <div class="container">
+    <div class="jumbotron">
+
+      <div class="dayvalue" *ngFor="let item of currentValues;">
+        <h6 class="display-6">State:{{ item.state}}, Date:{{ item.date }}, Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}</h6>
+      </div>
+
+    </div>
+</div> -->
+
+<div class="titletag">
+  <div class="display-4">Total Cases Per State</div>
+  <div class="display-5">(latest values are from yesterday)</div>
+</div>
+
+<div class="container" *ngFor="let item of currentValues;">
+  <ul class="list-group">
+    <li class="list-group-item">State: {{ item.state }}, Date: {{ item.date | dateFormat }}, Negative: {{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}</li>
+  </ul>
+</div>

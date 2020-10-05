@@ -1,0 +1,19 @@
+<!-- <div class="container">
+    <div class="jumbotron">
+
+      <div class="dayvalue" *ngFor="let item of historicUSData;">
+        <h6 class="display-6">Date:{{ item.date }}, Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}</h6>
+      </div>
+
+    </div>
+  </div> -->
+<div class="titletag">
+  <div class="display-4">Covid-19 Cases In United States</div>
+  <div class="display-5">Data from The COVID Tracking Project - https://covidtracking.com</div>
+</div>
+
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of historicUSData;">Date:{{ item.date | dateFormat }}, Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}</li>
+  </ul>
+</div>

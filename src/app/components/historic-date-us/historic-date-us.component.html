@@ -1,0 +1,20 @@
+<div class="titletag">
+    <div class="display-4">Select Date to Retrieve Values:</div>
+</div>
+
+<div class="container">
+    
+    <form class="form-group" [formGroup]="dateSelection" (ngSubmit)="onSelectButton()">
+        <input type="date" class="form-control" formControlName="date">
+        <button class="btn btn-primary" type="submit">Select</button>
+    </form>
+
+</div>
+
+<div class="out">
+    <ul class="list-group">
+        <li  *ngIf="covidData" class="list-group-item"> 
+            Date:{{ covidData.date | dateFormat }}, Negative:{{ covidData.negative}}, Positive: {{covidData.positive}}, Deaths: {{covidData.death}}
+        </li>
+    </ul>
+</div>

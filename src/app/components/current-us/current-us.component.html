@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="jumbotron">
+
+      <div class="dayvalue" *ngFor="let item of currentUSData;">
+        <h6 class="display-6">Date:{{ item.date | dateFormat }}, Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}</h6>
+      </div>
+
+    </div>
+  </div>

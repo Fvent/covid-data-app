@@ -1,0 +1,21 @@
+#headtab{
+    background-color: darkblue;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.dropdown-item{
+    color: black;
+}
+
+.dropdown-item:active{
+    color: black;
+    background-color: turquoise;
+}
+
+.dropdown-item:hover {
+    color: blue;
+  }

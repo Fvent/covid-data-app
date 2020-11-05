@@ -1,8 +1,10 @@
-<h3>Select the State and the Date.</h3>
 
-<form class="form-group" id="SelectForm" [formGroup]="stateDateForm" (ngSubmit)="onSelectButton()">
+
+<div id="formdiv">
+  <h3>Select the State and the Date.</h3>
+  <form class="form-group" id="SelectForm" [formGroup]="stateDateForm" (ngSubmit)="onSelectButton()">
     <label for="exampleFormControlSelect1">Select State:</label>
-    <select class="form-control" id="exampleFormControlSelect1" formControlName="stateSelected">
+    <select class="form-control" id="exampleFormControlSelect1" formControlName="stateSelected" required>
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
       <option value="AZ">Arizona</option>
@@ -58,11 +60,15 @@
 
     <br>
     <label for="date-control">Select Date: </label>
-    <input class="form-control" id="date-control" type="date" formControlName="dateSelected">
+    <input class="form-control" id="date-control" type="date" formControlName="dateSelected" required>
 
   <button type="submit" class="btn btn-primary mb-2">Select</button>
 </form>
 
+</div>
+
+
+<div id="outputdiv">
 <h5 *ngIf="badRequest">{{ badRequest }}</h5>
 
 <ul class="list-group">
@@ -70,3 +76,5 @@
         Date:{{ covidData.date | dateFormat }}, Negative:{{ covidData.negative}}, Positive: {{covidData.positive}}, Deaths: {{covidData.death}}
     </li>
 </ul>
+
+</div>

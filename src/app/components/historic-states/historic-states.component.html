@@ -1,7 +1,7 @@
 <h2 class="titletag">Displays all recorded values for selected state</h2>
 <form class="form-group" id="SelectForm" [formGroup]="selectForm" (ngSubmit)="onSelectButton()">
     <label for="exampleFormControlSelect1">Select State:</label>
-    <select class="form-control" id="exampleFormControlSelect1" formControlName="stateSelected">
+    <select class="form-control" id="exampleFormControlSelect1" formControlName="stateSelected" required>
       <option value="AL">Alabama</option>
       <option value="AK">Alaska</option>
       <option value="AZ">Arizona</option>

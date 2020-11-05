@@ -3,3 +3,16 @@
     margin-right: 25%;
     text-align: center;
 }
+
+#result-list {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: white;
+}
+
+#listelement {
+    margin-top: 1vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 1vh;
+}

@@ -11,7 +11,7 @@
 
 </div>
 
-<div class="out">
+<div id="result" class="out">
     <ul class="list-group">
         <li  *ngIf="covidData" class="list-group-item"> 
             Date:{{ covidData.date | dateFormat }}, Negative:{{ covidData.negative}}, Positive: {{covidData.positive}}, Deaths: {{covidData.death}}

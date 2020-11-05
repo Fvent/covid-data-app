@@ -12,8 +12,11 @@
   <div class="display-5">Data from The COVID Tracking Project - https://covidtracking.com</div>
 </div>
 
-<div class="container">
+<div id="result-list">
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let item of historicUSData;">Date:{{ item.date | dateFormat }}, Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}</li>
+    <li id="listelement" class="list-group-item" *ngFor="let item of historicUSData;">
+      {{ item.date | dateFormat }}<br> Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}},
+      Death Increase: {{item.deathIncrease}}, Hospitalized: {{item.hospitalizedCurrently}}, Currently in ICU: {{item.inIcuCurrently}}
+    </li>
   </ul>
 </div>

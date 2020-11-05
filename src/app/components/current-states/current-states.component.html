@@ -13,8 +13,11 @@
   <div class="display-5">(latest values are from yesterday)</div>
 </div>
 
-<div class="container" *ngFor="let item of currentValues;">
+<div id="result-list" *ngFor="let item of currentValues;">
   <ul class="list-group">
-    <li class="list-group-item">State: {{ item.state }}, Date: {{ item.date | dateFormat }}, Negative: {{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}</li>
+    <li id="listelement" class="list-group-item">State: {{ item.state }}, Date: {{ item.date | dateFormat }} <br>
+       Negative: {{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}, Death Increase {{item.deathIncrease}},
+       Hospitalized: {{item.hospitalizedCurrently}}, Currently in ICU: {{item.inIcuCurrently}}
+      </li>
   </ul>
 </div>

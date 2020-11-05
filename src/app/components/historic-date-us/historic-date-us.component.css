@@ -3,3 +3,9 @@
     margin-right: 25%;
     text-align: center;
 }
+
+#result {
+    align-content: center;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}

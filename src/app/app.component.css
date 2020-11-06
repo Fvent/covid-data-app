@@ -19,3 +19,8 @@ a {
 .dropdown-item:hover {
     color: blue;
   }
+
+#nvt{
+    margin-top: auto;
+   margin-left: auto;
+}

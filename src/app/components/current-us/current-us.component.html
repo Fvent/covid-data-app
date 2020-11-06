@@ -5,7 +5,8 @@
         Current Total Values in the US:
         <ul class="list-group">
           <li class="list-group-item">
-            Date:{{ item.date | dateFormat }}, Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}
+            {{ item.date | dateFormat }}<br> Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}},
+      Death Increase: {{item.deathIncrease}}, Hospitalized: {{item.hospitalizedCurrently}}, Currently in ICU: {{item.inIcuCurrently}}
           </li>
         </ul>
 

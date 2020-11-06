@@ -6,6 +6,7 @@ import { CurrentStatesComponent } from "../app/components/current-states/current
 import { HistoricStatesComponent } from './components/historic-states/historic-states.component';
 import { HistoricDateUsComponent } from './components/historic-date-us/historic-date-us.component';
 import { StateDateComponent } from './components/state-date/state-date.component';
+import { PageNotFoundComponent } from "./components/page-not-found/page-not-found.component";
 
 const routes: Routes = [
   { path:"historicus", component: HistoricUsComponent },
@@ -13,7 +14,9 @@ const routes: Routes = [
   { path:"currentstate", component:CurrentStatesComponent},
   { path:"historicstate", component:HistoricStatesComponent},
   { path:"historicdateus", component:HistoricDateUsComponent},
-  { path:"statedate", component:StateDateComponent}
+  { path:"statedate", component:StateDateComponent},
+  { path:"", component: HistoricUsComponent},
+  { path:"**", component:PageNotFoundComponent}
 ];
 
 @NgModule({

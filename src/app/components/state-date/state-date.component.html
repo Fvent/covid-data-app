@@ -73,7 +73,10 @@
 
 <ul class="list-group">
     <li class="list-group-item" *ngIf="covidData">
-        Date:{{ covidData.date | dateFormat }}, Negative:{{ covidData.negative}}, Positive: {{covidData.positive}}, Deaths: {{covidData.death}}
+        <!-- Date:{{ covidData.date | dateFormat }}, Negative:{{ covidData.negative}}, Positive: {{covidData.positive}}, Deaths: {{covidData.death}} -->
+        State: {{ covidData.state }}, Date: {{ covidData.date | dateFormat }} <br>
+       Negative: {{ covidData.negative}}, Positive: {{covidData.positive}}, Deaths: {{covidData.death}}, Death Increase {{covidData.deathIncrease}},
+       Hospitalized: {{covidData.hospitalizedCurrently}}, Currently in ICU: {{covidData.inIcuCurrently}}
     </li>
 </ul>
 

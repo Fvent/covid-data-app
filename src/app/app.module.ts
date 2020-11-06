@@ -17,6 +17,7 @@ import { StateDateService } from "../app/services/state-date.service";
 import { DateUsValuesService } from "../app/services/date-us-values.service";
 import { DateFormatPipe } from './pipes/date-format.pipe';
 import { StateDateComponent } from './components/state-date/state-date.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { StateDateComponent } from './components/state-date/state-date.component
     HistoricStatesComponent,
     CurrentStatesComponent,
     DateFormatPipe,
-    StateDateComponent
+    StateDateComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

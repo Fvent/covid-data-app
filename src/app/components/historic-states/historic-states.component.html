@@ -60,7 +60,9 @@
 <div class="container">
   <ul class="list-group">
     <li *ngFor="let item of stateData;" class="list-group-item">
-      Date:{{ item.date | dateFormat }}, Negative:{{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}
+      State: {{ item.state }}, Date: {{ item.date | dateFormat }} <br>
+       Negative: {{ item.negative}}, Positive: {{item.positive}}, Deaths: {{item.death}}, Death Increase {{item.deathIncrease}},
+       Hospitalized: {{item.hospitalizedCurrently}}, Currently in ICU: {{item.inIcuCurrently}}
     </li>
   </ul>
 </div>
